@@ -1,0 +1,917 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Header start */
+#header {
+    padding: 30px;
+    background-color: #000;
+    
+}
+
+#header a {
+    color: #fff;
+}
+
+#header .logo h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#header .nav-menu ul li {
+    font-size: 16px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+#header .nav-menu ul li a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#header .nav-menu ul li::before {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: crimson;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 3px;
+    transition: .5s ease;
+}
+
+#header .nav-menu ul li:hover::before {
+    width: 30px;
+}
+
+#header .nav-menu ul li:first-child::before {
+    width: 30px !important;
+}
+
+#header .nav-menu ul li:last-child::before {
+    width: 0 !important;
+}
+
+/* header ends */
+#digital-agency {
+    background-color: #000;
+    position: relative;
+}
+
+#digital-agency .top-digital .digital-text {
+    width: 50%;
+    margin-top: 100px;
+}
+
+#digital-agency .top-digital .digital-text h1 {
+    color: #fff;
+    font-size: 70px;
+    width: 90%;
+    position: relative;
+}
+
+#digital-agency .top-digital .digital-text h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 3px;
+    background-color: crimson;
+}
+
+#digital-agency .top-digital .digital-text a {
+    display: inline-block;
+    margin-top: 60px;
+    border: 1px solid crimson;
+    padding: 17px 25px;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+#digital-agency .top-digital .digital-text a::before {
+    content: '';
+    top: 0;
+    left: 0%;
+    width: 0%;
+    height: 100%;
+    background-color: crimson;
+    position: absolute;
+    z-index: -1;
+    transition: .5s ease;
+}
+
+#digital-agency .top-digital .digital-text a:hover::before {
+    width: 100%;
+}
+
+#digital-agency .top-digital .digital-image {
+    height: 850px;
+    width: 50%;
+    margin-right: 120px;
+}
+
+#digital-agency .top-digital .digital-image img {
+    height: 850px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#digital-agency .bottom-digital {
+    position: absolute;
+    top: 64%;
+    left: 0;
+}
+
+#digital-agency .bottom-digital .active {
+    background-color: crimson !important;
+}
+
+#digital-agency .bottom-digital .box:hover {
+    background-color: crimson;
+}
+
+#digital-agency .bottom-digital .box {
+    width: 33.333%;
+    padding: 40px 20px;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: #1b1b1b;
+    transition: .5s ease;
+}
+
+#digital-agency .bottom-digital .box i,
+h3,
+p {
+    color: #fff;
+}
+
+#digital-agency .bottom-digital .box h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#digital-agency .bottom-digital .box i {
+    font-size: 48px;
+}
+
+.bottom-digital {
+    position: relative;
+    display: flex;
+    z-index: 1;
+}
+
+.bottom-digital .box-1::after {
+    content: " ";
+    background-color: crimson;
+    height: 70px;
+    width: 27%;
+    position: absolute;
+    bottom: -20px;
+    z-index: -1;
+    transform: translateX(-495px);
+}
+
+#digital-agency::after {
+    content: '';
+    width: 3px;
+    height: 40px;
+    position: absolute;
+    border-color: crimson;
+    top: 10%;
+    left: 50%;
+}
+
+/* Digital agency ends */
+#services {
+    margin-top: 100px;
+}
+
+#services .service-head h1 {
+    font-weight: bolder;
+    font-size: 45px;
+    position: relative;
+}
+
+#services .service-head h1::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: crimson;
+    top: 0%;
+    left: 0;
+}
+
+#services .service-head p {
+    color: crimson;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#services .service-categories-content {
+    width: 32%;
+    height: 90px;
+    margin-top: 30px;
+    margin-left: 15px;
+    background-color: rgb(225, 222, 222);
+}
+
+#services .service-categories-content i,
+h2 {
+    display: flex;
+    align-items: center;
+}
+
+#services .service-categories-content .horse-ico {
+    color: #ccc;
+    font-size: 80px;
+    font-weight: bold;
+    transform: scale(0);
+    margin-left: -60px;
+    transition: .5s ease;
+}
+
+#services .service-categories-content h2 {
+    transform: translateX(-70px);
+    transition: .5s ease;
+}
+
+#services .service-categories-content:hover {
+    background-color: crimson;
+}
+
+#services .service-categories-content:hover .horse-ico {
+    transform: scale(1);
+    margin-left: 0;
+}
+
+#services .service-categories-content:hover h2{
+    transform: translateX(0);
+}
+
+#services .service-categories-content .right-ico{
+    transition: .5s ease;
+}
+
+#services .service-categories-content:hover .right-ico{
+    transform: translateX(10px);
+}
+
+#services::after{
+    content: '';
+    width: 3px;
+    height: 40px;
+    position: absolute;
+    background-color: crimson;
+    top: 215%;
+    left: 50%;
+}
+/* Services end */
+
+.images2{
+    margin: 20px 0px;
+}
+
+.images2 .images2-text{
+    padding: 40px 80px;
+}
+
+.images2 .images2-text .text-1{
+    width: 50%;
+    margin-left: 70px;
+}
+
+.images2 .images2-text .text-1 h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.images2 .images2-text .text-1 p{
+    font-size: 21px;
+    color: crimson;
+    font-weight: bold;
+}
+
+.images2 .images2-text .text-2{
+    width: 50%;
+    text-align: end;
+}
+
+.images2 .text-1 h1{
+    position: relative;
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+.images2 .images2-text .text-1 h1::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: crimson;
+    top: 0%;
+    left: 0;
+}
+
+.images2 .images2-text .text-2 button{
+    color: #000;
+    background-color: #fff;
+    position: relative;
+    padding: 20px 40px ;
+    margin-left: 83px;
+    border: 1px solid crimson;
+    font-size: 20px;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.images2 .images2-text .text-2 button::after{
+    content: '';
+    transition: .5s ease;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: crimson;
+}
+
+.images2 .images2-text .text-2 button:hover{
+    color: #fff;
+}
+
+.images2 .images2-text .text-2 button:hover::after{
+    width: 100%;
+}
+
+.images2 .container{
+    padding: 50px 0px;
+}
+
+.images2 .container .photo2{
+    width: 100%;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.images2 .container .photo2:hover{
+      transform: scale(0.9);
+}
+
+.images2 .container .photo2 img{
+    width: 100%;
+    transition: all 0.9s;
+    filter: brightness(1);
+}
+.images2 .container .photo2 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.images2 .container .photo2:hover .overlay{
+    opacity: 0.5;
+}
+
+.images2 .container .photo2:hover img{
+    transform: scale(1.2);
+    filter: grayscale(0);
+}
+
+.images2 .container .photo2:hover .photo-text2{
+    visibility: visible;
+}
+
+.images2 .container .photo-text2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    transition: all 0.2s;
+    visibility: hidden;
+}
+
+.images2 .container .photo-text2 p{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.images2 .container .photo-text2 h1{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    width: 110%;
+}
+
+/* .images2::after{
+    content: '';
+    width: 3px;
+    height: 40px;
+    position: absolute;
+    background-color: crimson;
+    top: 280%;
+    left: 50%;
+} */
+
+
+.about .container{
+    padding: 50px 100px;
+}
+
+.about .container .images3-text .text-3 h1{
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+}
+
+.about .container .images3-text .text-3 h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 3px;
+    background-color: crimson;
+    left: 0;
+}
+
+.about .container .images3-text .text-3 p{
+    font-size: 22px;
+    color: crimson;
+    font-weight: bold;
+}
+
+.about .container .images3-text .text3-2 p{
+    padding: 20px 100px ;
+    color: #1b1b1b;
+    font-size: 25px;
+}
+
+.about{
+    position: relative;
+}
+
+.about::after{
+    content: '';
+    width: 3px;
+    height: 50px;
+    position: absolute;
+    background-color: crimson;
+    top: 0;
+    left: 50%;
+}
+
+.main-2{
+    margin: 0 auto;
+    width: 100%;
+    filter: grayscale(100);
+    opacity: 1;
+}
+
+.iamge1 img:hover{
+    filter: grayscale(0%);
+    transition: 700ms ease-in-out;
+    transition: 700ms ease-in;
+}
+
+.bc:hover{
+    filter: grayscale(0%);
+    transition: 500ms ease-in-out;
+    transition: 500ms ease-in;
+}
+
+.cd:hover{
+    filter: grayscale(0%);
+    transition: 500ms ease-in-out;
+    transition: 500ms ease-in;
+}
+
+.text-block:hover{
+    filter: grayscale(0%);
+    transition: transform 500ms ease-out;
+    transition: transform 500ms ease-in;
+}
+
+.text-block1:hover{
+    filter: grayscale(0%);
+    transition: transform 500ms ease-out;
+    transition: transform 500ms ease-in;
+}
+
+.image1{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    filter: grayscale(100%);
+}
+
+.side-image{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    position: relative;
+}
+.image1 img{
+    width: 100%;
+    background-color: #1b1b1b;
+    filter: grayscale(100%);
+}
+
+.bc{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    filter: grayscale(100%);
+    transition: 700ms cubic-bezier(0.17, 0.67, 1.01);
+}
+
+.cd{
+    width: 100%;
+    margin-top: 10px;
+    height: 225px;
+    background: #1b1b1b;
+    filter: grayscale(100%);
+}
+.text-block{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    filter: grayscale(100%);
+}
+
+.text-block1{
+    position: absolute;
+    top: 160px;
+    left: 20px;
+    color: wheat;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+    filter: grayscale(100%);
+}
+
+.text-block1 h4{
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.main-three{
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.ptext-1,
+.ptext-2,
+.ptext-3{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px 0px 15px;
+}
+
+.who{
+     font-size: 24px;
+     font-weight: 700;
+}
+
+.cap{
+    font-size: 24px;
+    color: gray;
+    line-height: 26px;
+    letter-spacing: -1;
+}
+
+.a-line-h{
+    padding: 30px;
+    border-left: 4px solid crimson;
+    margin: 0 auto;
+    width: 0px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+/* client */
+
+
+.desinger .client{
+    padding: 50px 100px;
+}
+  
+  .desinger .client .client-box{
+      width: 35%;
+      position: relative;
+      z-index: 10;
+}
+
+.desinger .client .client-box::after{
+    position: absolute;
+    content: '';
+    transition: 0.7s ;
+    z-index: -10;
+    right: -5%;
+    bottom: -4%;
+    width: 20%;
+    height: 12%;
+    background-color: crimson;
+}
+
+.desinger .client .client-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.desinger .client .client-box-text {
+    width: 55%;
+}
+
+.desinger .client .client-box-text h1{
+    font-size: 60px;
+    margin: 20px 0px;
+}
+
+.desinger .client .client-box-text h3{
+    color: crimson;
+}
+
+.desinger .client .client-box-text p{
+    margin: 20px 0px ;
+    padding-right: 60px;
+    font-size: 24px;
+    color: gray;
+    
+}
+
+
+.desinger .client .client-box img::before{
+    content: '';
+    top: 0;
+    left: 0%;
+    width: 0%;
+    height: 100%;
+    background-color: crimson;
+    position: absolute;
+    z-index: -1;
+    transition: .5s ease;
+}
+
+/* client dies */
+
+.brand .container{
+    padding: 50px 10px;
+}
+
+.addition{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.addition h1{
+    color:  #000;
+    font-size: 50px;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+.addition p{
+    color: crimson;
+    font-weight: bold;
+}
+/* .addition{
+    position: relative;
+}
+.addition::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 60px;
+      height: 10px;
+      touch-action: 3px;
+      background-color: crimson;
+      left: 0;
+} */
+
+
+.images .container{
+    padding: 10px 0px;
+}
+
+.images .container .photo{
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+}
+
+.images .container .photo img{
+    width: 100%;
+    transition: all 0.9s ;
+    filter: grayscale(1);
+}
+
+.images .container .photo .overley{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+}
+.images .container .photo .overley{
+    opacity: 0.5s;
+}
+
+.images .container .photo:hover img{
+    transform: scale(1.2);
+    filter: grayscale(0);
+}
+
+.images .container .photo:hover .photo-text{
+    top: 50%;
+}
+
+.images .container .photo:hover .photo-text i{
+    visibility: visible;
+}
+
+.images .container .photo-text{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    transform: all 0.5s;
+    width: 100%;
+}
+
+
+
+.images .container .photo-text p{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.images .container .photo-text h1{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.images .container .photo-text i{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    visibility: hidden;
+}
+
+/* end */
+
+.end{
+    background-color: #1b1b1b;
+    padding: 6rem 0rem;
+    margin-top: 50px;
+}
+
+.end .end-icon .face{
+     font-size: 20px;
+     padding: 20px 25px;
+     border: 1px solid crimson;
+     color: white;
+     border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.end .end-icon i{
+    font-size:20px;
+    padding: 20px 20px;
+    border: 1px solid crimson;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.end .end-icon i:hover{
+    color: crimson;
+    transform: translateY(-20%);
+}
+
+.end .end-text{
+    color: white;
+    font-size: 30px;
+}
+
+.end .end-button button{
+    margin-left: 20px;
+    position: relative;
+    padding: 20px;
+    background-color: transparent;
+    font-size: 20px;
+    color: white;
+    border: 1px solid crimson;
+    z-index: 1;
+}
+
+.end .end-button button::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+    z-index: -1;
+    transition:  .5s ease;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.end .end-button button:hover::after{
+    width: 100%;
+}
+
+.connection{
+    background-color: #1b1b1b;
+    padding: 2rem 0rem;
+}
+
+.connection .contact{
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.connection .contact:hover{
+    color: crimson;
+}
+
+.contact p:hover{
+    color: crimson;
+}
+
+.footer{
+    background-color: black;
+    padding: 1rem;
+}
+
+.footer .footer-text1{
+    color: white;
+}
+.footer .footer-text1 span{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer .footer-text-2 p{
+    color: white;
+    padding-right: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.footer .footer-text-2 p:after{
+    transition: 0.7s;
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: crimson;
+}
+
+.footer .footer-text-2 p:hover::after{
+    width: 50%;
+}
+
+.footer .footer-text-2 p:hover{
+    color: crimson;
+}
